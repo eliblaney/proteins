@@ -29,7 +29,7 @@ public enum AminoAcid {
 	private final String longName;
 	private final String[] codes;
 	
-	private AminoAcid(String longName, String... codes) {
+	AminoAcid(String longName, String... codes) {
 		this.longName = longName;
 		this.codes = codes;
 	}

@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class NucleicAcid {
 	
-	protected final List<Base> bases = new LinkedList<Base>();
+	protected final List<Base> bases = new LinkedList<>();
 	
 	public NucleicAcid(Base... bases) {
 		for(Base e : bases)
@@ -24,7 +24,7 @@ public abstract class NucleicAcid {
 	public abstract NucleicAcid mutate(long point, long frameshift);
 	
 	public List<Base> getStrand() {
-		LinkedList<Base> strand = new LinkedList<Base>();
+		LinkedList<Base> strand = new LinkedList<>();
 		for(Base b : bases)
 			strand.add(b);
 		return strand;

@@ -1,6 +1,11 @@
 .DS_Store
 .classpath
 .project
+
 *.class
+target/*
+
+.idea/*
+*.iml
 
 hs_err_pid*

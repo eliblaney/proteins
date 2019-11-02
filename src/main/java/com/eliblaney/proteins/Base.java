@@ -30,7 +30,7 @@ public class Base {
 	}
 	
 	public static Base[] fromString(String bases) {
-		ArrayList<Base> b = new ArrayList<Base>();
+		ArrayList<Base> b = new ArrayList<>();
 		for(char c : bases.toCharArray())
 			b.add(new Base(c));
 		Base[] ba = new Base[b.size()];

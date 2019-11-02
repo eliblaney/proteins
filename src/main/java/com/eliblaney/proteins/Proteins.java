@@ -14,7 +14,8 @@ public class Proteins {
 		DNA dna2 = dna.mutate(10, 50);
 		RNA rna2 = dna2.createRNA(RNAType.mRNA);
 
-		if(display(dna2, rna2)) {
+		boolean valid = display(dna2, rna2);
+		if(valid) {
 			System.out.println("RNA Equivalent? " + rna.isEquivalent(rna2));
 			System.out.println("DNA Equal? " + dna.equals(dna2));
 		}
@@ -22,8 +23,8 @@ public class Proteins {
 	}
 	
 	private static boolean display(DNA dna, RNA rna) {
-		System.out.println("tDNA: " + dna);
-		System.out.println("cDNA: " + dna.complementary());
+		System.out.println("template DNA: " + dna);
+		System.out.println("  coding DNA: " + dna.complementary());
 		System.out.println();
 		System.out.println(rna.getType().name() + ": " + rna);
 		System.out.println();
